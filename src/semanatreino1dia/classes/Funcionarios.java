@@ -9,18 +9,20 @@ package semanatreino1dia.classes;
  *
  * @author evandroarmando
  */
-public class Funcionarios extends Pessoas {
+public class Funcionarios extends Usuario {
     
   String morada;
   String cargo;
   Usuario Adiconado_por;
 
-    public Funcionarios(String morada, String cargo, String nome, int idade) {
-        super(nome, idade);
+    public Funcionarios(String morada, String cargo, Usuario Adiconado_por, String tipo_usuario, String nome, int idade) {
+        super(tipo_usuario, nome, idade);
         this.morada = morada;
         this.cargo = cargo;
+        this.Adiconado_por = Adiconado_por;
     }
 
+    
     public String getMorada() {
         return morada;
     }

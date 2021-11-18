@@ -25,7 +25,8 @@ public class SemanaTreino1Dia {
         Cliente cliente [] = new Cliente[6];
         Usuario  usuario [] = new Usuario[6];
         usuario[0]= new Usuario("adm", "evandro", 18);
-        cliente [0]= new Cliente("kilamba", "masculino", usuario[0]);
+        cliente[0]= new Cliente("kilamba", "masculino", usuario[0]);
+        
         
         
     }
