@@ -40,13 +40,19 @@ public class SemanaTreino1Dia {
         //lojas
         usuario[1]= new Usuario("Funcionario", "Abel", 18);
         funcionario[0]= new Funcionarios("kilamba", "Atendente de caixa",usuario[0], usuario[0].getNome(), usuario[1].getNome(), usuario[0].getIdade());  
-        cliente[0]= new Cliente("kilamba", "masculino", usuario[2]);
+        cliente[0]= new Cliente("kilamba", "masculino", usuario[0], "Mize", 18);
         donoloja[0] = new Dono("Rui", 35);
         loja[0] = new Loja(donoloja[0], "farmacia vida");
         productos[0] = new Producto("paracetamol", "medicamento para trabalho", 100);
+        productos[1] = new Producto("paracetamol", "medicamento para trabalho", 100);
+
         facturas[0]= new Factura(productos[0], cliente[0], funcionario[0], loja[0], 1000);
        
-        System.out.println(facturas[0].adicionarProductos(productos[0]));        
+        System.out.println(facturas[0].adicionarProductos(productos[0])); 
+        System.out.println(facturas[0].adicionarProductos(productos[1]));  
+        System.out.println(facturas[0].pagar());
+        System.out.println(facturas[0].Relátorio());
+
         
         
         

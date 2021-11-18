@@ -32,9 +32,14 @@ public class Factura {
   
   
   public String pagar(){
-            
+       
+      if (this.qtdProductos >=1 && this.total >0) {
+           this.setSaldo(this.getTotal()-this.getSaldo());
+           return " Pagamento realizado com sucesso!";
+      } else {
+          return " Pagamento não realizado com sucesso!, sem productos ou saldo suficiente";
+      }
       
-      return null;
   }
   
   
@@ -42,7 +47,7 @@ public class Factura {
   public String adicionarProductos (Producto producto){
         if (this.saldo>= producto.preco) {
          this.setTotal(this.getTotal()+producto.getPreco());
-          qtdProductos ++;
+          qtdProductos ++; 
           return "Total: "+this.total+" , producto adiconado: "+producto.getNome();
       } else {
           return "não é possivel adicionar productos a factura, preço superior"
@@ -55,6 +60,14 @@ public class Factura {
         
       
   }
+
+    public String Relátorio() {
+        return "Factura{" + "numero de productos=" + this.getQtdProductos() + ", clientePagou=" + this.getClientePagou().nome + ", funcionario que facturou=" + this.funcionarioFacturou.nome + ", lojaaondeComprou=" + this.lojaaondeComprou.nome_loja +  ", saldo=" + this.saldo + ", total=" + this.total +'}';
+    }
+  
+  
+  
+  
 
     public Producto getProductosnalista() {
         return productosnalista;

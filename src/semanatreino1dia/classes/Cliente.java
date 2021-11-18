@@ -9,17 +9,23 @@ package semanatreino1dia.classes;
  *
  * @author Tequerro
  */
-public class Cliente  {
+public class Cliente extends  Pessoas {
     String morada;
     String sexo;
     Usuario adicionadopor;
 
-    public Cliente(String morada, String sexo, Usuario adicionadopor) {
+    public Cliente(String morada, String sexo, Usuario adicionadopor, String nome, int idade) {
+        super(nome, idade);
         this.morada = morada;
         this.sexo = sexo;
         this.adicionadopor = adicionadopor;
     }
 
+    
+
+
+    
+    
     public String getMorada() {
         return morada;
     }
