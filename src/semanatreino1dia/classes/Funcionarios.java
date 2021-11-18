@@ -23,6 +23,10 @@ public class Funcionarios extends Usuario {
     }
 
     
+    
+    
+    
+    
     public String getMorada() {
         return morada;
     }
