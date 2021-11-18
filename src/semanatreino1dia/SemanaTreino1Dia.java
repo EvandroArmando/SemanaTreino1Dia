@@ -27,6 +27,7 @@ public class SemanaTreino1Dia {
         Usuario  usuario [] = new Usuario[6];
         Funcionarios funcionario []= new Funcionarios[6];
         
+        
         //setar as classes
         usuario[0]= new Usuario("Chefe", "evandro", 18);
         usuario[2]= new Usuario("Cliente", "Irineia Lukombo", 18);

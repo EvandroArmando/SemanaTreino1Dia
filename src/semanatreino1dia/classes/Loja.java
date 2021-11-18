@@ -9,21 +9,22 @@ package semanatreino1dia.classes;
  *
  * @author Tequerro
  */
-public class Loja {
-    String dono;
+public class Loja  {
+    
+    Dono  donoloja;
     String nome_loja;
 
-    public Loja(String dono, String nome_loja) {
-        this.dono = dono;
+    public Loja(Dono donoloja, String nome_loja) {
+        this.donoloja = donoloja;
         this.nome_loja = nome_loja;
     }
-
-    public String getDono() {
-        return dono;
+    
+    public Dono getDonoloja() {
+        return donoloja;
     }
 
-    public void setDono(String dono) {
-        this.dono = dono;
+    public void setDonoloja(Dono donoloja) {
+        this.donoloja = donoloja;
     }
 
     public String getNome_loja() {
@@ -33,7 +34,6 @@ public class Loja {
     public void setNome_loja(String nome_loja) {
         this.nome_loja = nome_loja;
     }
-    
-    
+
     
 }
