@@ -43,7 +43,7 @@ public class SemanaTreino1Dia {
         cliente[0]= new Cliente("kilamba", "masculino", usuario[2]);
         donoloja[0] = new Dono("Rui", 35);
         loja[0] = new Loja(donoloja[0], "farmacia vida");
-        productos[0] = new Producto("paracetamol", "medicamento para trabalho", 2000);
+        productos[0] = new Producto("paracetamol", "medicamento para trabalho", 100);
         facturas[0]= new Factura(productos[0], cliente[0], funcionario[0], loja[0], 1000);
        
         System.out.println(facturas[0].adicionarProductos(productos[0]));        
