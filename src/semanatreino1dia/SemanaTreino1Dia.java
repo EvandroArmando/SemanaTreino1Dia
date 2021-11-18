@@ -5,6 +5,9 @@
  */
 package semanatreino1dia;
 
+import semanatreino1dia.classes.Cliente;
+import semanatreino1dia.classes.Usuario;
+
 /**
  *
  * @author evandroarmando
@@ -16,6 +19,15 @@ public class SemanaTreino1Dia {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        
+        
+        Cliente cliente [] = new Cliente[6];
+        Usuario  usuario [] = new Usuario[6];
+        usuario[0]= new Usuario("adm", "evandro", 18);
+        cliente [0]= new Cliente("kilamba", "masculino", usuario[0]);
+        
+        
     }
     
 }

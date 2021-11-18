@@ -9,13 +9,12 @@ package semanatreino1dia.classes;
  *
  * @author Tequerro
  */
-public class Cliente extends Pessoas {
+public class Cliente  {
     String morada;
     String sexo;
     Usuario adicionadopor;
 
-    public Cliente(String morada, String sexo, Usuario adicionadopor, String nome, int idade) {
-        super(nome, idade);
+    public Cliente(String morada, String sexo, Usuario adicionadopor) {
         this.morada = morada;
         this.sexo = sexo;
         this.adicionadopor = adicionadopor;
@@ -45,23 +44,6 @@ public class Cliente extends Pessoas {
         this.adicionadopor = adicionadopor;
     }
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public int getIdade() {
-        return idade;
-    }
-
-    public void setIdade(int idade) {
-        this.idade = idade;
-    }
-
-    
     
     
     
