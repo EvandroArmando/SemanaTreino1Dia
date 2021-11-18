@@ -6,7 +6,9 @@
 package semanatreino1dia;
 
 import semanatreino1dia.classes.Cliente;
+import semanatreino1dia.classes.Dono;
 import semanatreino1dia.classes.Funcionarios;
+import semanatreino1dia.classes.Loja;
 import semanatreino1dia.classes.Usuario;
 
 /**
@@ -26,6 +28,8 @@ public class SemanaTreino1Dia {
         Cliente cliente [] = new Cliente[6];
         Usuario  usuario [] = new Usuario[6];
         Funcionarios funcionario []= new Funcionarios[6];
+        Dono  donoloja []= new Dono[6];
+        Loja loja [] = new Loja[6];
         
         
         //setar as classes
@@ -35,6 +39,9 @@ public class SemanaTreino1Dia {
         usuario[1]= new Usuario("Funcionario", "Abel", 18);
         funcionario[0]= new Funcionarios("kilamba", "Atendente de caixa",usuario[0], usuario[0].getNome(), usuario[1].getNome(), usuario[0].getIdade());  
         cliente[0]= new Cliente("kilamba", "masculino", usuario[2]);
+        donoloja[0] = new Dono("Rui", 35);
+        loja[0] = new Loja(donoloja[0], "farmacia vida");
+        
         
         
         

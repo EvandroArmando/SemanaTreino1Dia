@@ -17,6 +17,7 @@ public class Loja  {
     public Loja(Dono donoloja, String nome_loja) {
         this.donoloja = donoloja;
         this.nome_loja = nome_loja;
+        
     }
     
     public Dono getDonoloja() {
